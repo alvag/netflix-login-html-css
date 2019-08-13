@@ -1,15 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DevFLix</title>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="css/app.css">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>DevFLix</title>
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+		<link rel="stylesheet" href="css/app.css" />
+	</head>
 
+	<body>
+		<header class="site-header">
+			<img src="img/logo.svg" alt="logo" class="logo" />
+		</header>
 
-</body>
+		<main class="form-login container">
+			<form action="#">
+				<legend>Inicia Sesión</legend>
+				<div class="field">
+					<input type="text" id="username" />
+					<label for="username">Email o número de teléfono</label>
+				</div>
+
+				<div class="field">
+					<input type="password" id="password" />
+					<label for="password">Contraseña</label>
+					<span>Mostrar</span>
+				</div>
+
+				<div class="submit">
+					<input type="submit" value="Iniciar Sesión" />
+				</div>
+
+				<div class="actions">
+					<div class="remember-me">
+						<input type="checkbox" name="" id="remember" />
+						<label for="remember">Recuérdame</label>
+					</div>
+
+					<div class="help">
+						<a href="#">¿Necesitas ayuda?</a>
+					</div>
+				</div>
+			</form>
+
+			<div class="content-bottom">
+				<a href="#">Iniciar Sesión con Facebook</a>
+				<p class="new-user">
+					¿Primera vez en Netflix?
+					<a href="#">Suscríbete ya</a>
+				</p>
+			</div>
+		</main>
+
+		<div class="site-footer">
+			<div class="container">
+				<p>¿Preguntas? Llama al 01800-265-0161</p>
+				<nav class="menu-footer">
+					<a href="#">Términos de tarjetas de regalo</a>
+					<a href="#">Términos de uso</a>
+					<a href="#">Declaración de privacidad</a>
+				</nav>
+
+				<select class="language">
+					<option value="es">Español</option>
+					<option value="en">English</option>
+				</select>
+			</div>
+		</div>
+
+		<script src="js/scripts.js"></script>
+	</body>
 </html>
